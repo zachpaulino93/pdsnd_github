@@ -6,7 +6,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-# this is a type list for all months avalible for search 
+# this is a type list for all months avalible for search
 MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 
 DAYS = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
@@ -210,7 +210,7 @@ def user_stats(df):
 
 
 def raw_data(df):
-
+# raw data function loop for asking user if they want raw data in loops of 5
 
     count = 0
     n = count
