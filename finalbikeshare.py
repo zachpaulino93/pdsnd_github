@@ -12,7 +12,6 @@ MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 DAYS = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 
-
 def get_filters():
 
     """
@@ -216,7 +215,7 @@ def raw_data(df):
     n = count
 
     while True:
-        answer = str(input('Type yes to see 5 lines of raw data, if not type no : ').lower().strip())
+        answer = str(input('Type yes to see the next 5 lines of raw data, if not type no : ').lower().strip())
         if answer == str(('yes')):
             count += 5
             print(df.iloc[0:].head(count))
@@ -236,7 +235,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
-            print('Thanks for using our bikeshare data services, have a great day!')
+            print('Thanks for using our bikeshare services, have a great day!')
             break
 
 
